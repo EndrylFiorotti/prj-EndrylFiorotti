@@ -1,26 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 body{
     margin: 0;
+    padding: 0;
 
     background-color: aliceblue;
+
+    font-family: 'Roboto', sans-serif;
 }
 .nav{
     width: 100%;
     height: flex;
 
     background-color: rgb(24, 24, 24);
+
+    border-bottom: 3px solid #3289CD;
 }
-.container{
-    width: 80%;
+.container h1{
+    color: #3289CD;
 }
 .nav .container{
+    width: 80%;
+
     margin-left: auto;
     margin-right: auto;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    background-color: white;
 }
 .navbar{
     width: 400px;
@@ -28,4 +34,101 @@ body{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: #E3B062;
+}
+.navbar .agora{
+    font-weight: bold;
+}
+.banner{
+    background-image: url("img/bg-jelly-fish-para_outras_pags.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .container{
+    height: 550px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+.banner .container.login{
+    justify-content: center;
+}
+
+.banner p{
+    width: 260px;
+
+    font-size: 36px;
+    
+    margin-left: 20%;
+}
+.card{
+    width: 400px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e5e5e5;
+    color: #E6005A;
+}
+.card h2{
+    margin: 0;
+}
+.card form{
+    width: 250px;
+
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin: 8px 0 8px;
+    padding: 8px;
+
+    border: 0;
+    outline: 3px solid #3289CD;
+    border-radius: 10px;
+}
+form button{
+    width: 120px;
+    padding: 10px 15px;
+    margin-top: 10px;
+
+    background-color: #E6005A;
+    color: white;
+
+    font-size: 18px;
+
+    border-radius: 5px;
+    border: 0;
+
+    align-self: center;
+
+    cursor: pointer;
+}
+form button:active{
+    background-color: #68092e;
+}
+.footer{
+    background-color: #3289CD;
+    color: white;
+}
+.footer .container{
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
 }
