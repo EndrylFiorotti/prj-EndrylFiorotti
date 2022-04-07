@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -99,6 +100,11 @@ form input{
     outline: 3px solid #3289CD;
     border-radius: 10px;
 }
+form .botao{
+
+    display: flex;
+    justify-content: space-between;
+}
 form button{
     width: 120px;
     padding: 10px 15px;
@@ -118,6 +124,37 @@ form button{
 }
 form button:active{
     background-color: #68092e;
+}
+.imagens{
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+.caixa{
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagens h2{
+    color: #E6005A;
+    font-weight: bold;
+}
+.imagens p{
+    width: 70%;
+
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+}
+.imagens img{
+    width: 150px;
 }
 .footer{
     background-color: #3289CD;
